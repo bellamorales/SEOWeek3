@@ -40,7 +40,7 @@ def home_info():
     text=my_text, 
     subtitle=my_subtitle)
 
-    
+
 @app.route("/about")
 def about_info():
   #return "<h2> This is a wonderful program do demo Flask. </h2>"
@@ -61,7 +61,7 @@ def register():
         return redirect(url_for('home_info')) # if so - send to home page
     return render_template('register.html', title='Register', form=form)
 
-
+# this is a test
 
 if __name__ == "__main__":
   # 0.0.0.0 runs on any ip number
