@@ -32,19 +32,19 @@ class User(db.Model):
 def hello_world():
   return "<p>Hello Big Big World!</p>"
 
-@app.route("/about")
-def about_info():
-  #return "<h2> This is a wonderful program do demo Flask. </h2>"
-  return render_template('about.html', subtitle="About This Demo")
-
-my_subtitle = "Home Page"
-
 @app.route("/home")
 def home_info():
+  my_subtitle = "Home Page"
   my_text = 'This is the home page'
   return render_template('home.html', 
     text=my_text, 
     subtitle=my_subtitle)
+
+    
+@app.route("/about")
+def about_info():
+  #return "<h2> This is a wonderful program do demo Flask. </h2>"
+  return render_template('about.html', subtitle="About This Demo")
 
 @app.route("/second_page")
 def second_page():
