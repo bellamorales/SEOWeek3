@@ -61,7 +61,7 @@ def register():
         return redirect(url_for('home_info')) # if so - send to home page
     return render_template('register.html', title='Register', form=form)
 
-
+#testing test file 
 
 if __name__ == "__main__":
   # 0.0.0.0 runs on any ip number
